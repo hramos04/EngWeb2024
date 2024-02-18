@@ -112,8 +112,8 @@ for arquivo_xml in os.listdir(pasta_xml):
         nome_arquivo_html = f"rua_{arquivo_xml[:-4]}.html"  # Removendo a extensão .xml e adicionando prefixo "rua_"
         caminho_arquivo_html = os.path.join(pasta_html, nome_arquivo_html)
         html_resultante = gerar_pagina_html(caminho_arquivo_xml)
-        with open(caminho_arquivo_html, "w") as f:
-            f.write(html_resultante)
+        with open(caminho_arquivo_html, "wb") as f:
+            f.write(html_resultante.encode('utf-8'))
         print(f"Arquivo HTML '{nome_arquivo_html}' criado com sucesso.")
 
 print("Conversão concluída. Os arquivos HTML foram salvos na pasta 'html'.")
