@@ -14,10 +14,10 @@
         </uc>
     </meta>
     <resumo>
-        <p>Foi construída uma página principal em html contendo todos os indíces dos nomes das ruas.</p>
-        <p> Cada um do indices será redirecionado para a página da rua em específico que terá as informações da mesma.</p>
+        <p>Foi construída uma página principal em html contendo todos os índices dos nomes das ruas.</p>
+        <p> Cada um do índices será redirecionado para a página da rua em específico que terá as informações da mesma.</p>
     </resumo>
     <resultados>
-        <resultado>Há uma ligação para cada indice da página html para a página da respetiva rua através de um script de python.</resultado>
+        <resultado>Há uma ligação para cada índice da página html para a página da respetiva rua criado através de um script de python.</resultado>
     </resultados>
 </doc>
