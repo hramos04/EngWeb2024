@@ -38,7 +38,6 @@ def paginaIndice(arquivo_xml):
 
     html += '<div>\n'
     corpo = root.find('corpo')
-    
 
     html += '<b>Antigamente:</b>\n'  
     for elemento in corpo:
