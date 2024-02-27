@@ -1,23 +1,24 @@
 import json
- 
+
 file = open("mapaVirtual.json", "r", encoding="utf-8")
-
 data = json.load(file)
-
-html = """
-<!DOCTYPE html>
-<html lang="pt PT">
-<head> 
-    <meta charset="UTF-8">
-    <title>Cidades e ligações</title>
-<body>"""
 
 for cidade in data['cidades']:
     id = cidade['id']
     nome = cidade['nome']
     populacao = cidade['população']
-    descricao = cidade['descrição'] 
-    distrito = cidade['distrito']    
+    descricao = cidade['descrição']
+    distrito = cidade['distrito']
+
+    html = """
+    <!DOCTYPE html>
+    <html lang="pt PT">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cidades e ligações</title>
+    </head>
+    <body>
+    """
 
     html += f"""
     <h1>{nome}</h1>
@@ -33,12 +34,17 @@ for cidade in data['cidades']:
             destino = ligacao['destino']
             distancia = ligacao['distância']
 
-            for nome in data['cidades']:
-                if nome['id'] == destino:
+            for cidade_destino in data['cidades']:
+                if cidade_destino['id'] == destino:
                     html += f"""
-                    <br>Nome: {nome['nome']}</br>
+                    <br>Nome: {cidade_destino['nome']}</br>
                     <br>Distância: {distancia}</br>
                     """
-                
-    with open(f"./Cidades/{id}.html", "wb") as f:
-        f.write(html.encode('utf-8'))
+
+    html += """
+    </body>
+    </html>
+    """
+
+    with open(f"./Cidades/{id}.html", "w", encoding="utf-8") as f:  # Aqui modifiquei para abrir o arquivo em modo de escrita "w"
+        f.write(html)
