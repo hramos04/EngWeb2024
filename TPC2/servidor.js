@@ -10,9 +10,9 @@ http.createServer((req, res) => {
     var q = url.parse(req.url, true);
 
     var lastIndex = q.pathname.lastIndexOf("/c");
-    var cityPage = ""
+    var pagina = ""
     if(lastIndex !== -1){
-        cityPage = q.pathname.substring(lastIndex+1)
+        pagina = q.pathname.substring(lastIndex+1)
     }
 
     if(q.pathname == "/"){
@@ -37,8 +37,8 @@ http.createServer((req, res) => {
         })     
 
     }
-    else if (cityPage !== ""){
-        var fileName = "Cidades/" + cityPage + ".html"
+    else if (pagina !== ""){
+        var fileName = "Cidades/" + pagina + ".html"
         fs.readFile(fileName, (err, file) => {
             res.write(file);
             res.end();
