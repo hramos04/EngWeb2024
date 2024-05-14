@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<doc>
+    <meta>
+        <title>TPC4</title>
+        <date>2024-03-11</date>
+        <author>
+            <id>a100644</id>
+            <nome>Hugo Ramos</nome>
+        </author>
+        <uc>
+            <sigla>EW2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>1. Montar a API de dados com o json-server a partir do dataset de compositores em anexo.</p>
+        <p>2. Criar uma aplicação Web com as seguintes caraterísticas:</p>
+        <p>2.1. CRUD sob re compositores;<p>
+        <p>2.2. CRUD sobre periodos musicais.<p>
+        <p>Investigar e inserir pelo menos 5 compositores do período moderno ou serialista.<p>
+    </resumo>
+    <resultados>
+        <resultado>Primeiro criei um script em python para corrigir o ficheiro json que continha erros.</resultado>
+        <resultado>De seguida criei um servidor em Node.js que acede ao ficheiro json para realizar as operações **get**, **post**, **put** e **delete**.</resultado>
+        <resultado>Para cada um dos casos, no ficheiro templates.js, tem a página html que é mostrada consoante o que for especificado no url com base nos botões que forem carregados.</resultado>
+    </resultados>
+</doc>

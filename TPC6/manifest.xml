@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<doc>
+    <meta>
+        <title>TPC5</title>
+        <date>2024-04-09</date>
+        <author>
+            <id>a100644</id>
+            <nome>Hugo Ramos</nome>
+        </author>
+        <uc>
+            <sigla>EW2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>1. Montar a API de dados com o json-server a partir do dataset de compositores em anexo e criar páginas pug com recurso ao Express e ao MongoDB.</p>
+        <p>2. Criar uma aplicação Web com as seguintes caraterísticas:</p>
+        <p>2.1. CRUD sob re compositores;<p>
+        <p>2.2. CRUD sobre periodos musicais.<p>
+        <p>Investigar e inserir pelo menos 5 compositores do período moderno ou serialista.<p>
+    </resumo>
+    <resultados>
+        <resultado>Primeiro criei um script em python para corrigir o ficheiro json que continha erros.</resultado>
+        <resultado>De seguida criei um servidor em Node.js que acede ao ficheiro json para realizar as operações **get**, **post**, **put** e **delete**.</resultado>
+        <resultado>Utilizamos o express para gerarmos as páginas em pug e redirecionamos para cada um deles.</resultado>
+        <resultado>Com o mongoDB onde estavam previamente inseridos na base de dados os ficheiros json, acedemos a cada um dos dados.</resultado>
+    </resultados>
+</doc>

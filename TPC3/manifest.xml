@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<doc>
+    <meta>
+        <title>TPC3</title>
+        <date>2024-03-02</date>
+        <author>
+            <id>a100644</id>
+            <nome>Hugo Ramos</nome>
+        </author>
+        <uc>
+            <sigla>EW2024</sigla>
+            <nome>Engenharia Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Foi construída uma página principal em html contendo todos os filmes, atores e géneros.</p>
+        <p>Também foi construída uma página para cada um dos filmes, atores e géneros.</p>
+    </resumo>
+    <resultados>
+        <resultado>Há uma página com todos os filmes. Cada um deles tem uma liagação para a página específica com informações do mesmo.</resultado>
+        <resultado>Há uma página com todos os atores. Cada um deles tem uma liagação para a página específica com informações do mesmo.</resultado>
+        <resultado>Há uma página com todos os géneros. Cada um deles tem uma liagação para a página específica com informações do mesmo.</resultado>
+    </resultados>
+</doc>
